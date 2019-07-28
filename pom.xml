@@ -13,7 +13,6 @@
     <modules>
         <module>web-app</module>
         <module>jpa-entities</module>
-        <module>from-intellij</module>
         <module>web-api</module>
         <module>converters</module>
     </modules>
@@ -22,9 +21,10 @@
         <revision>1.0-SNAPSHOT</revision>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>11</java.version>
+        <java.version>1.8</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
+    	<org.mapstruct.version>1.3.0.Final</org.mapstruct.version>
     </properties>
 
     <build>
@@ -65,7 +65,7 @@
                         <configuration>
                             <rules>
                                 <requireJavaVersion>
-                                    <version>[11,)</version>
+                                    <version>[1.8,)</version>
                                 </requireJavaVersion>
                                 <requireMavenVersion>
                                     <version>[3.5,)</version>

@@ -12,15 +12,22 @@
 
     <artifactId>converters</artifactId>
 
-    <properties>
-        <!--<mapstruct.version>1.2.0.Final</mapstruct.version>-->
-    </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct</artifactId>
-            <version>${mapstruct.version}</version>
+            <version>${org.mapstruct.version}</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>guru.springframework</groupId>
+            <artifactId>jpa-entities</artifactId>
+            <version>${revision}</version>
+        </dependency>
+        <dependency>
+            <groupId>guru.springframework</groupId>
+            <artifactId>web-api</artifactId>
+            <version>${revision}</version>
         </dependency>
     </dependencies>
 
@@ -35,7 +42,7 @@
                         <path>
                             <groupId>org.mapstruct</groupId>
                             <artifactId>mapstruct-processor</artifactId>
-                            <version>${mapstruct.version}</version>
+                            <version>${org.mapstruct.version}</version>
                         </path>
                     </annotationProcessorPaths>
                 </configuration>
